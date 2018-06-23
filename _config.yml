@@ -1,0 +1,29 @@
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Gruntfile.js
+  - new_post
+  - package.json
+  - package-lock.json
+  - setup.sh
+  - site.conf
+  - LICENSE
+  - README.md
+
+plugins_dir:
+  - jekyll-sitemap
+
+disqus_shortname: AZDrums

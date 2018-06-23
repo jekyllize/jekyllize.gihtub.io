@@ -1,0 +1,9 @@
+.bundle
+.vendor
+assets/css
+assets/js
+_site
+node_modules
+Gemfile.lock
+package-lock.json
+site.conf

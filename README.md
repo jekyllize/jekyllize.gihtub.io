@@ -38,5 +38,5 @@ It uses [bash-ini-parser](https://github.com/rudimeier/bash_ini_parser)
 from Ruediger Meier Github repository.
 Giving website specific infos (website name, url etc.) in the `site.conf`
 ini file, it replace the specified variables with the ini file informations.
-Once done it installs ruby bundle, grunt and jekyll automatically and push
+Once done it installs ruby bundle, runs grunt and jekyll automatically and push
 the resulting `_site` content in a specified git repository.

@@ -1,16 +1,16 @@
 {
 	"name": "site_name",
-	"version": "version_number",
-	"author": "author_name",
+	"version": "site_version_number",
+	"author": "site_author_name",
 	"homepage": "site_url",
 	"repository": {
-		"type": "repository_type",
-		"url": "repository_url"
+		"type": "site_repository_type",
+		"url": "site_repository_url"
 	},
 	"bugs": {
-		"url": "repository_bugs_url"
+		"url": "site_repository_bugs_url"
 	},
-	"license": "license_name",
+	"license": "site_license_name",
 	"engines": {
 		"node": ">= 0.12.7"
 	},

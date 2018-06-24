@@ -26,4 +26,4 @@ exclude:
 plugins_dir:
   - jekyll-sitemap
 
-disqus_shortname: AZDrums
+disqus_shortname: site_disqus_shortname

@@ -25,7 +25,7 @@ window.__gcse = {
 };
 
 (function() {
-	var cx = 'cse_code';
+	var cx = 'site_cse_code';
 	var gcse = document.createElement('script');
 	gcse.type = 'text/javascript';
 	gcse.async = true;

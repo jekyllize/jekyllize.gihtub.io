@@ -24,6 +24,8 @@ Icons are provided by [Font Awesome][fa].
     $ yarn dist
     $ bundle exec jekyll serve -w
 
+At this point the local website will be available at http://localhost:4000/
+
 ## Automated setup
 
 The `setup.sh` makes the installation process automatic.
@@ -31,5 +33,5 @@ It uses [bash-ini-parser](https://github.com/rudimeier/bash_ini_parser)
 from Ruediger Meier Github repository.
 Giving website specific infos (website name, url etc.) in the `site.conf`
 ini file, it replace the specified variables with the ini file informations.
-Once done it installs ruby bundle, runs grunt and jekyll automatically and push
+Once done it installs ruby bundle, runs yarn and jekyll automatically and push
 the resulting `_site` content in a specified git repository.

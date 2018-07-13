@@ -1,0 +1,13 @@
+toc:
+    - title: Products
+      type: dropdown
+      pages:
+        - title: HHC
+          url: /en/products/hhc
+
+        - title: Cymbals kits
+          url: /en/products/cymbalkits
+
+    - title: Downloads
+      type: normal
+      url: /en/downloads/

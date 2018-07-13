@@ -1,9 +1,9 @@
 ---
 title: "Nuovo Sito Avviato"
 date: 2017-10-22
+date_fmt: "%d/%m/%Y"
 comments: true
-ref: welcome
-categories: website update
+categories: it news
 lang: it
 ---
 Siamo orgogliosi di annunciare il nuovo sito web!

@@ -18,19 +18,14 @@ if [ $INI__settings__setup_done == 0 ]; then
 fi
 
 if [ ! -d "node_modules" ]; then
-	echo "Running npm install..."
-	npm install --no-bin-links
+	echo "Running yarn install..."
+	yarn --no-bin-links
 fi
 
-if [ ! -d ".vendor" ]; then
-	echo "Running bundle install..."
-	bundle install --path .vendor/bundle
-fi
-
-if [ ! -f "./assets/js/scripts.min.js" ]; then
-	echo "Running grunt..."
-	grunt
+if [ ! -f "assets/css/style.min.css" ]; then
+	echo "Running yarn dist..."
+	yarn dist
 fi
 
 echo "Running jekill..."
-bundle exec jekyll serve --watch
+bundle exec jekyll serve -w

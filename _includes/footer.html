@@ -1,6 +1,13 @@
+{% for language in site.data.i18n %}
+    {% if language[0] == page.lang %}
+        {% assign language = language[1] %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+{% assign t_back_to_top = language.translation.back_to_top %}
+
 <hr><footer>
-  <p style="text-align:left;">site_name {{ site.time | date: "%Y" }}
-  {% assign string = "Back To Top" %}
-  {% if page.lang == "it" %} {% assign string = "Torna Su" %} {% endif %}
-  <span style="float:right;"><a href="#top">{{ string }}</a></span></p>
+    <p style="text-align:left;">&copy;{{ site.organization_name }} {{ site.time | date: "%Y" }}
+    <span style="float:right;"><a href="#top">{{ t_back_to_top }}</a></span></p>
 </footer>

@@ -12,18 +12,21 @@ defaults:
       layout: "post"
 
 exclude:
+  - CNAME
   - Gemfile
   - Gemfile.lock
-  - Gruntfile.js
+  - LICENSE
   - new_post
+  - node_modules
   - package.json
   - package-lock.json
+  - README.md
   - setup.sh
   - site.conf
-  - LICENSE
-  - README.md
+  - yarn.lock
 
 plugins_dir:
   - jekyll-sitemap
 
+organization_name: site_name
 disqus_shortname: site_disqus_shortname

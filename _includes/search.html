@@ -1,24 +1,25 @@
-{% assign search_txt = "Search this website:" %}
-{% assign search_btn = "Search" %}
-{% if page.lang == "it" %}
-	{% assign search_txt = "Cerca in questo sito:" %}
-	{% assign search_btn = "Cerca" %}
-{% endif %}
+{% for language in site.data.i18n %}
+    {% if language[0] == page.lang %}
+        {% assign language = language[1] %}
+        {% break %}
+    {% endif %}
+{% endfor %}
 
-<div class="row" style="margin-top: 1.5em; margin-bottom: 1.5em;">
-	<div class="col-sm-6 col-sm-offset-3">
-		<p class="text-center">{{ search_txt }}</p>
+{% assign t_search = language.translation.search %}
+{% assign t_search_website = language.translation.search_website %}
+
+<div class="row my-4 justify-content-center">
+	<div class="col-md-7">
+		<p class="text-center">{{ t_search_website }}</p>
 		<form class="form-search" role="search" action="/{{ page.lang }}/search/">
 			<div class="input-group input-group-lg">
 				<input type="text" class="form-control searchbox" name="q">
-				<span class="input-group-btn">
-					<button class="btn btn-primary" type="submit">{{ search_btn }}</button>
-				</span>
+				<div class="input-group-append">
+					<button class="btn btn-primary" type="submit">{{ t_search }}</button>
+				</div>
 			</div>
 		</form>
 	</div>
 </div>
 
-<div class="reset-box-sizing">
-	<div id="searchresults" class="gcse-searchresults-only" data-enableHistory="true"></div>
-</div>
+<div id="searchresults" class="gcse-searchresults-only" data-enableHistory="true"></div>

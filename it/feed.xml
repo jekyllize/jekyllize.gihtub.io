@@ -1,6 +1,0 @@
----
-layout: blank
-lang: it
-title: "Blog"
----
-{% include feed.xml %}

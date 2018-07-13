@@ -1,39 +1,56 @@
-<nav class="navbar navbar-inverse" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header navbar-left">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="/{{ page.lang }}" class="navbar-brand">site_name</a>
-        </div><!-- Navbar Header -->
-        <div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <img border="0" src="/assets/flags/{{ page.lang }}.png" width="16" height="11"><b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="/en/">
-                            <img border="0" src="/assets/flags/en.png" width="16" height="11"> English</a>
-                        </li>
-                        <li>
-                            <a href="/it/">
-                            <img border="0" src="/assets/flags/it.png" width="16" height="11"> Italiano</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        {% assign search_txt = "Search" %}
-        {% if page.lang == "it" %} {% assign search_txt = "Cerca" %} {% endif %}
-            <form class="navbar-form navbar-right" role="search" action="/{{ page.lang }}/search/">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="{{ search_txt }}" name="q">
-                    <i class="fa fa-search fa-fw" aria-hidden="true" style="color:#cfcfcf;"></i>
-                </div>
-            </form>
-        </div>
-    </div><!-- End Container -->
-</nav><!-- End Navbar -->
+{% for language in site.data.i18n %}
+	{% if language[0] == page.lang %}
+		{% assign language = language[1] %}
+		{% break %}
+	{% endif %}
+{% endfor %}
+
+<nav class="navbar navbar-expand-lg navbar-dark rounded">
+	<a class="navbar-brand" href="/{{ page.lang }}/">
+		<img src="/assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+		{{ site.organization_name }}
+	</a>
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+	aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarContent">
+		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" id="navbarMenuLang" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<img border="0" src="/assets/flags/{{ page.lang }}.png" width="16" height="11">
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarMenuLang">
+{% for t in site.data.i18n %}
+					<a class="dropdown-item" href="/{{ t[0] }}/">
+						<img border="0" src="/assets/flags/{{ t[0] }}.png" width="16" height="11">
+						{{ t[1].translation.name }}</a>
+{% endfor %}
+				</div>
+			</li>
+{% for item in language.navigation.toc %}
+	{% if item.type == "normal" %}
+			<li class="nav-item">
+				<a class="nav-link" href="{{ item.url }}"> {{ item.title }}</a>
+	{% else %}
+		{% assign item_id = 'navbar' | append: item.title %}
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="{{ item_id }}" data-toggle="dropdown"
+				aria-haspopup="true" aria-expanded="false"> {{ item.title }}</a>
+				<div class="dropdown-menu" aria-labelledby="{{ item_id }}">
+					{% for page in item.pages %}
+						<a class="dropdown-item" href="{{ page.url }}">{{ page.title }}</a>
+					{% endfor %}
+				</div>
+	{% endif %}
+			</li>
+{% endfor %}
+		</ul>
+	</div>
+{% assign t_search = language.translation.search %}
+	<form class="form-inline my-2 my-lg-0" role="search" action="/{{ page.lang }}/search/">
+		<input class="form-control mr-sm-2" type="search" name="q" placeholder="{{ t_search }}" aria-label="Search">
+	</form>
+</nav>

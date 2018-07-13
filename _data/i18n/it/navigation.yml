@@ -1,0 +1,13 @@
+toc:
+    - title: Prodotti
+      type: dropdown
+      pages:
+        - title: HHC
+          url: /it/prodotti/hhc
+
+        - title: Kit Per Piatti
+          url: /it/prodotti/cymbalkits
+
+    - title: Applicazioni
+      type: normal
+      url: /it/downloads/

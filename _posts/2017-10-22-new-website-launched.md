@@ -1,9 +1,9 @@
 ---
 title: "New Website Launched"
 date: 2017-10-22
+date_fmt: "%F"
 comments: true
-ref: welcome
-categories: website update
+categories: en news
 lang: en
 ---
 We're proud to announce a new website!

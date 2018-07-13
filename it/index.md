@@ -3,11 +3,12 @@ title: Home
 layout: home
 lang: it
 date_fmt: "%d/%m/%Y"
-txt1: "Pubblicato il "
-txt2: "Commenti"
-txt3: " Archivio Notizie"
 ---
+<div class="jumbotron p-4 mb-3">
+
 Benvenuti!
+
+</div>
 
 # Ultime Notizie
 

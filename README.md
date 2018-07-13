@@ -1,35 +1,28 @@
-# Website
+# Source code for the [site_name](site_url) website.
 
-View site: site_url
-
-The website is built using [Jekyll][jekyll], using [Node.js][node]
-and [Grunt][grunt] to compile all static assets including the
-[Bootstrap][bootstrap] library the site is built on along with the
-[Font Awesome][fa] icon set using [LESS][less] stylesheets. Most of the content
-on the website is written using [Markdown][markdown], making it extremely easy
-to write and maintain.
+The website is built using [Jekyll][jekyll], using [Node.js][node] to compile
+all static assets including the [Bootstrap][bootstrap] library and built on
+along with the [SASS][sass] stylesheets. Most of the content on the website is
+written using [Markdown][markdown], making it extremely easy to write and maintain.
+Icons are provided by [Font Awesome][fa].
 
 [jekyll]: http://jekyllrb.com/
 [node]: http://nodejs.org/
 [grunt]: http://gruntjs.com/
 [bootstrap]: http://getbootstrap.com/
 [fa]: http://fontawesome.io/
-[less]: http://www.lesscss.org/
+[sass]: https://sass-lang.com/
 [markdown]: https://daringfireball.net/projects/markdown/
 
 ## Quick-start Guide
 
-Run `grunt` to compile all assets, and run `jekyll` to
-start up the built-in webserver that will automatically re-generate all pages
-any time it's corresponding file is changed here.
-
-    $ npm install --no-bin-links
-    $ grunt
-    $ jekyll serve --watch
-
-Note that you only need to run `npm install` once per new checkout. Now you can
-edit content at verify your changes by pulling up the website running
-(after restarting Jekyll): <http://localhost:4000/>
+    Install `ruby` and `yarn`
+    $ gem install bundler
+    $ gem install github-pages
+    $ gem update
+    $ yarn --no-bin-links
+    $ yarn dist
+    $ bundle exec jekyll serve -w
 
 ## Automated setup
 

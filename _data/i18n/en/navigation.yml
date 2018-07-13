@@ -2,11 +2,11 @@ toc:
     - title: Products
       type: dropdown
       pages:
-        - title: HHC
-          url: /en/products/hhc
+        - title: Item 1
+          url: /en/products/1
 
-        - title: Cymbals kits
-          url: /en/products/cymbalkits
+        - title: Item 2
+          url: /en/products/2
 
     - title: Downloads
       type: normal

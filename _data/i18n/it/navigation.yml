@@ -2,11 +2,11 @@ toc:
     - title: Prodotti
       type: dropdown
       pages:
-        - title: HHC
-          url: /it/prodotti/hhc
+        - title: Articolo 1
+          url: /it/prodotti/1
 
-        - title: Kit Per Piatti
-          url: /it/prodotti/cymbalkits
+        - title: Articolo 2
+          url: /it/prodotti/2
 
     - title: Applicazioni
       type: normal

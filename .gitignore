@@ -1,7 +1,8 @@
 .bundle
 .vendor
-assets/css
-assets/js
+assets/css/style.css
+assets/css/*.map
+assets/js/*.map
 _site
 node_modules
 Gemfile.lock

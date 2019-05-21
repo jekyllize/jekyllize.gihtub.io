@@ -1,6 +1,6 @@
 {
 	"name": "site_name",
-	"version": "site_version_number",
+	"version": "0.1.0",
 	"author": "site_author_name",
 	"homepage": "site_url",
 	"scripts": {
@@ -36,6 +36,7 @@
 		"npm-run-all": "^4.1.2",
 		"popper.js": "^1.14.1",
 		"postcss-cli": "^5.0.0",
+		"sass": "^1.14.3",
 		"uglify-js": "^3.3.16"
 	}
 }

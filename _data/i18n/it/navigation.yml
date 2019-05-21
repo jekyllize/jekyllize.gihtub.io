@@ -1,13 +1,27 @@
 toc:
-    - title: Prodotti
+    - title: Jekyll
       type: dropdown
       pages:
-        - title: Articolo 1
-          url: /it/prodotti/1
+        - title: Home
+          url: https://jekyllrb.com/
 
-        - title: Articolo 2
-          url: /it/prodotti/2
+        -
 
-    - title: Applicazioni
+        - title: Docs
+          url: https://jekyllrb.com/docs/
+
+        - title: Risorse
+          url: https://jekyllrb.com/resources/
+
+        - title: Vetrina
+          url: https://jekyllrb.com/showcase/
+
+        - title: Novità
+          url: https://jekyllrb.com/news/
+
+        - title: Repository
+          url: https://github.com/jekyll/jekyll
+
+    - title: Repository su GitHub
       type: normal
-      url: /it/downloads/
+      url: https://github.com/jekyllize/jekyllize.github.io

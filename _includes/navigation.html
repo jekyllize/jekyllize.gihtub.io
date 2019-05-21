@@ -5,14 +5,14 @@
 	{% endif %}
 {% endfor %}
 
-<nav class="navbar navbar-expand-lg navbar-dark rounded">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
 	<a class="navbar-brand" href="/{{ page.lang }}/">
 		<img src="/assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
 		{{ site.organization_name }}
 	</a>
 
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-	aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+		aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 
@@ -40,9 +40,13 @@
 				<a class="nav-link dropdown-toggle" href="#" id="{{ item_id }}" data-toggle="dropdown"
 				aria-haspopup="true" aria-expanded="false"> {{ item.title }}</a>
 				<div class="dropdown-menu" aria-labelledby="{{ item_id }}">
-					{% for page in item.pages %}
-						<a class="dropdown-item" href="{{ page.url }}">{{ page.title }}</a>
-					{% endfor %}
+		{% for pag in item.pages %}
+			{% if pag.title == nil %}
+					<div class="dropdown-divider"></div>
+			{% else %}
+					<a class="dropdown-item" href="{{ pag.url }}">{{ pag.title }}</a>
+			{% endif %}
+		{% endfor %}
 				</div>
 	{% endif %}
 			</li>

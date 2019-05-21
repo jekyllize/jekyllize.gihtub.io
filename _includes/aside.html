@@ -1,19 +1,21 @@
-{% for language in site.data.i18n %}
-    {% if language[0] == page.lang %}
-        {% assign language = language[1] %}
-        {% break %}
-    {% endif %}
-{% endfor %}
-
-{% assign t_follow_us = language.translation.follow_us %}
-
-<div class="card border-primary mb-4">
-	<div class="card-header bg-primary text-light"><i class="fa fa-eye fa-fw" aria-hidden="true"></i> {{ t_follow_us }}</div>
+{% for card in site.data.i18n.[page.lang].aside.cards %}
+<div class="card border-dark mb-4">
+	<div class="card-header bg-dark text-white">
+		<i class="{{ card.icon_category }} fa-{{ card.icon_type }}"
+			aria-hidden="true"></i>
+		{{ card.title }}
+	</div>
 	<div class="card-body">
 		<ul class="nav nav-pills flex-column">
-			<li class="nav-item"><a class="nav-link" href="/{{ page.lang }}/atom.xml" title="News Atom Feed">
-				<i class="fa fa-rss fa-fw" aria-hidden="true"></i> News Atom Feed</a>
+{% for item in card.links %}
+			<li class="nav-item"><a class="nav-link" href="{{ item.url }}"
+				title="{{ item.title }}">
+				<i class="{{ item.icon_category }} fa-{{ item.icon_type }} fa-fw"
+				aria-hidden="true"></i>
+				{{ item.title }}</a>
 			</li>
+{% endfor %}
 		</ul>
 	</div>
 </div>
+{% endfor %}

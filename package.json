@@ -1,8 +1,8 @@
 {
-	"name": "site_name",
+	"name": "Jekyllize",
 	"version": "0.1.0",
-	"author": "site_author_name",
-	"homepage": "site_url",
+	"author": "RedTide <redtid3@gmail.com>",
+	"homepage": "https://jekyllize.github.io",
 	"scripts": {
 		"css": "node node_modules/npm-run-all/bin/run-s/index.js css-compile css-prefix css-minify",
 		"css-compile": "node node_modules/node-sass/bin/node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 _assets/scss/style.scss assets/css/style.css",
@@ -16,13 +16,13 @@
 		"defaults"
 	],
 	"repository": {
-		"type": "site_repository_type",
-		"url": "site_repository_url"
+		"type": "git",
+		"url": "git@github.com:jekyllize/jekyllize.github.io.git"
 	},
 	"bugs": {
-		"url": "site_repository_bugs_url"
+		"url": "https://github.com/jekyllize/jekyllize.github.io/issues"
 	},
-	"license": "site_license_name",
+	"license": "MPL-2.0",
 	"engines": {
 		"node": ">= 6.9.0"
 	},

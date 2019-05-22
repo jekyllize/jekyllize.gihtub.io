@@ -1,3 +1,6 @@
+---
+layout: null
+---
 var searchCallback = function() {
 
 	function getParameterByName(name) {
@@ -25,7 +28,7 @@ window.__gcse = {
 };
 
 (function() {
-	var cx = 'site_cse_code';
+	var cx = '{{ site.google.cse_code }}';
 	var gcse = document.createElement('script');
 	gcse.type = 'text/javascript';
 	gcse.async = true;

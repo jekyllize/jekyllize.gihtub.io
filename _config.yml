@@ -24,9 +24,20 @@ exclude:
   - setup.sh
   - site.conf
   - yarn.lock
+  - yarn-error.log
 
 plugins_dir:
   - jekyll-sitemap
 
-organization_name: site_name
-disqus_shortname: site_disqus_shortname
+google:
+  analytics_code:
+  cse_code:
+
+organization:
+  name: Jekyllize
+  url: https://github.com/jekyllize
+
+url: https://jekyllize.github.io
+spdx_license_id: MPL-2.0
+author: RedTide
+disqus_shortname:

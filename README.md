@@ -1,4 +1,4 @@
-# Source code for the [site_name](site_url) website.
+# Source code for the [Jekyllize](jekyllize.github.io) website.
 
 The website is built using [Jekyll][], using [Node.js][] to compile
 all static assets including the [Bootstrap][] library and built on

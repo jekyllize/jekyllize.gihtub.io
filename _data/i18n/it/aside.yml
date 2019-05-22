@@ -1,14 +1,13 @@
-cards:
-    - title: Seguici
-      icon_type: eye
-      icon_category: fas
-      links:
-        - title: Organizzazione GitHub
-          url: https://github.com/jekyllize/
-          icon_type: github
-          icon_category: fab
+- title: Seguici
+  icon_type: eye
+  icon_category: fas
+  links:
+    - title: Organizzazione GitHub
+      url: https://github.com/jekyllize/
+      icon_type: github
+      icon_category: fab
 
-        - title: News Atom Feed
-          url: /atom.xml
-          icon_type: rss
-          icon_category: fas
+    - title: News Atom Feed
+      url: /atom.xml
+      icon_type: rss
+      icon_category: fas

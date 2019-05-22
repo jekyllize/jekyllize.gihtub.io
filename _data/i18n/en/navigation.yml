@@ -1,27 +1,26 @@
-toc:
-    - title: Jekyll
-      type: dropdown
-      pages:
-        - title: Home
-          url: https://jekyllrb.com/
+- title: Jekyll
+  type: dropdown
+  pages:
+    - title: Home
+      url: https://jekyllrb.com/
 
-        -
+    -
 
-        - title: Docs
-          url: https://jekyllrb.com/docs/
+    - title: Docs
+      url: https://jekyllrb.com/docs/
 
-        - title: Resources
-          url: https://jekyllrb.com/resources/
+    - title: Resources
+      url: https://jekyllrb.com/resources/
 
-        - title: Showcase
-          url: https://jekyllrb.com/showcase/
+    - title: Showcase
+      url: https://jekyllrb.com/showcase/
 
-        - title: News
-          url: https://jekyllrb.com/news/
+    - title: News
+      url: https://jekyllrb.com/news/
 
-        - title: Repository
-          url: https://github.com/jekyll/jekyll
+    - title: Repository
+      url: https://github.com/jekyll/jekyll
 
-    - title: GitHub Repository
-      type: normal
-      url: https://github.com/jekyllize/jekyllize.github.io
+- title: GitHub Repository
+  type: normal
+  url: https://github.com/jekyllize/jekyllize.github.io

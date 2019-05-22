@@ -8,6 +8,6 @@
       icon_category: fab
 
     - title: News Atom Feed
-      url: /atom.xml
+      url: /en/atom.xml
       icon_type: rss
       icon_category: fas

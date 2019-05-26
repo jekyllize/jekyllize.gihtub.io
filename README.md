@@ -1,5 +1,7 @@
 # [Jekyllize](https://jekyllize.github.io) website template
 
+[![Travis Build Status](https://travis-ci.com/jekyllize/jekyllize.github.io.svg?branch=source)](https://travis-ci.com/jekyllize/jekyllize.github.io)
+
 The purpose of this project is to provide a website template for a quick website
 deployment, adding the following features:
 

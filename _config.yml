@@ -20,6 +20,7 @@ exclude:
   - node_modules
   - package.json
   - package-lock.json
+  - Rakefile
   - README.md
   - setup.sh
   - site.conf

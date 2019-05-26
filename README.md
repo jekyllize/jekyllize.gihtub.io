@@ -1,4 +1,4 @@
-# [Jekyllize](jekyllize.github.io) website template
+# [Jekyllize](https://jekyllize.github.io) website template
 
 The purpose of this project is to provide a website template for a quick website
 deployment, adding the following features:

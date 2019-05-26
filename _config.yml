@@ -23,7 +23,6 @@ exclude:
   - Rakefile
   - README.md
   - setup.sh
-  - site.conf
   - yarn.lock
   - yarn-error.log
 

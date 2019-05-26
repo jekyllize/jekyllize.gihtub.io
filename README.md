@@ -1,4 +1,4 @@
-# [Jekyllize](https://jekyllize.github.io) website template
+# Source code for the [Jekyllize](https://jekyllize.github.io) website template
 
 [![Travis Build Status](https://travis-ci.com/jekyllize/jekyllize.github.io.svg?branch=source)](https://travis-ci.com/jekyllize/jekyllize.github.io)
 
@@ -24,7 +24,7 @@ Icons are provided by [Font Awesome][], favicons by [Favicon Generator][].
 [Node.js]: http://nodejs.org/
 [SASS]: https://sass-lang.com/
 
-## Quick-start Guide
+## Local Build Quick-start Guide
 
 - Install `ruby` and `yarn`
 - Use the automatic setup via `setup.sh`

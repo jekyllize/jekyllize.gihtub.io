@@ -1,7 +1,7 @@
-# Source code for the [Jekyllize](jekyllize.github.io) website.
+# [Jekyllize](jekyllize.github.io) website template
 
 The purpose of this project is to provide a website template for a quick website
-deploy using GitHub Pages, adding some features:
+deployment, adding the following features:
 
 - Multilanguage support
 - Adapting layout to different devices using [Bootstrap][]
@@ -24,12 +24,15 @@ Icons are provided by [Font Awesome][], favicons by [Favicon Generator][].
 
 ## Quick-start Guide
 
-    Install `ruby` and `yarn`
+- Install `ruby` and `yarn`
+- Use the automatic setup via `setup.sh`
+
+or manually:
+
     $ gem update
-    $ gem install github-pages bundler
+    $ gem install bundler
     $ yarn --no-bin-links
     $ yarn dist
     $ bundle exec jekyll serve -w
 
-At this point the local website will be available at <http://localhost:4000/>
-
+The local website should be available at <http://localhost:4000/>

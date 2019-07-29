@@ -1,3 +1,4 @@
+navigation:
 - title: Jekyll
   type: dropdown
   pages:
@@ -9,18 +10,33 @@
     - title: Docs
       url: https://jekyllrb.com/docs/
 
-    - title: Resources
+    - title: Risorse
       url: https://jekyllrb.com/resources/
 
-    - title: Showcase
+    - title: Vetrina
       url: https://jekyllrb.com/showcase/
 
-    - title: News
+    - title: Novità
       url: https://jekyllrb.com/news/
 
     - title: Repository
       url: https://github.com/jekyll/jekyll
 
-- title: GitHub Repository
+- title: Repository su GitHub
   type: normal
   url: https://github.com/jekyllize/jekyllize.github.io
+
+cards:
+- title: Seguici
+  icon_type: eye
+  icon_category: fas
+  links:
+    - title: Organizzazione GitHub
+      url: https://github.com/jekyllize/
+      icon_type: github
+      icon_category: fab
+
+    - title: News Atom Feed
+      url: /it/atom.xml
+      icon_type: rss
+      icon_category: fas

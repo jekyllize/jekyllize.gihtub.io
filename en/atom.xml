@@ -1,6 +1,5 @@
 ---
-layout: blank
+layout: null
 lang: en
-title: "News"
 ---
 {% include atom.xml %}

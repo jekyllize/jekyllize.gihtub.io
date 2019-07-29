@@ -4,4 +4,4 @@ lang: it
 date_fmt: "%d/%m/%Y"
 ---
 
-{% include archive.html %}
+{% include post-archive.html %}

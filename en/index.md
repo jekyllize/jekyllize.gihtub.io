@@ -1,10 +1,10 @@
 ---
 title: Home
-layout: home
 lang: en
+layout: home
 date_fmt: "%B %d, %Y"
 ---
-<div class="jumbotron p-4 mb-3">
+<div markdown="1" class="jumbotron p-4 mb-3">
 
 Welcome!
 

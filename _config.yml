@@ -12,6 +12,10 @@ defaults:
       layout: "post"
 
 exclude:
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
   - Gemfile
   - Gemfile.lock
   - LICENSE
@@ -22,21 +26,28 @@ exclude:
   - Rakefile
   - README.md
   - setup.sh
+  - assets/css/style.css
+  - TODO.md
   - yarn.lock
   - yarn-error.log
 
 plugins:
   - jekyll-sitemap
 
+url: "https://jekyllize.github.io"
+
+spdx_license_id: "MPL-2.0"
+
+organization:
+  name: "Jekyllize"
+  url: "https://github.com/jekyllize"
+
+authors:
+  content: "RedTide"
+  web: "RedTide"
+
 google:
   analytics_code:
   cse_code:
 
-organization:
-  name: Jekyllize
-  url: https://github.com/jekyllize
-
-url: https://jekyllize.github.io
-spdx_license_id: MPL-2.0
-author: RedTide
 disqus_shortname:

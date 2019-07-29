@@ -1,10 +1,16 @@
-name: Italiano
+name: "Italiano"
+404_content: "La pagina che stai cercando non è stata trovata: potrebbe
+essere stata rimossa, o spostata. Pensiamo che la migliore cosa da fare
+sia di ripartire dalla pagina principale, oppure usare la ricerca qui
+di seguito."
+search_question: "Cosa cerchi?"
 search: "Cerca"
 search_website: "Cerca in questo sito:"
 back_to_top: "Torna Su"
 follow_us: "Seguici"
 posted_on: "Pubblicato il "
 comments: "Commenti"
+news: "Notizie"
 news_archive: " Archivio Notizie"
 archive_caption: "Cronologia di tutti i post, ordinati partendo da quelli più recenti."
 archive_header1: "Post"

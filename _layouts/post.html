@@ -1,13 +1,4 @@
-{% for language in site.data.i18n %}
-    {% if language[0] == page.lang %}
-        {% assign language = language[1] %}
-        {% break %}
-    {% endif %}
-{% endfor %}
-
-{% assign t_posted_on = language.translation.posted_on %}
-{% assign t_comments = language.translation.comments %}
-{% assign t_news_archive = language.translation.news_archive %}
+{% assign t = site.data.locale[page.lang].translation %}
 
 <!DOCTYPE html>
 <html>
@@ -28,23 +19,25 @@
 					<article class="mb-4">
 							<h1>{{ page.title | escape }}</h1>
 							<p class="text-muted">
-								{{ t_posted_on }}<time datetime="{{ page.date | datetime | date_to_xmlschema }}">{{ page.date | date: page.date_fmt }}</time>
+								{{ t.posted_on }}<time datetime="{{ page.date | datetime | date_to_xmlschema }}">
+								{{ page.date | date: page.date_fmt }}</time>
 {% if page.author %}by {{ page.author }}{% endif %}
 							</p>
 {{ content }}
 {% if page.comments and site.disqus_shortname %}
-						<h2>{{ t_comments }}</h2>
+						<h2>{{ t.comments }}</h2>
 						<div id="disqus_thread"></div>
 						<noscript>Please enable JavaScript to view the comments.</noscript>
 {% endif %}
 					</article>
 					<p class="my-4 text-center">
-						<a class="btn btn-lg btn-default" href="/{{ page.lang }}/news/archive/"><i class="fa fa-calendar fa-fw"></i>{{ t_news_archive }}</a>
+						<a class="btn btn-lg btn-default" href="{{ '/' | append: page.lang | append: '/' | append: "news/archive/" | relative_url }}">
+							<i class="fa fa-calendar fa-fw"></i>{{ t.news_archive }}</a>
 					</p>
 				</div>
 				<div class="col-md-3">
 					<aside>
-{% include aside.html %}
+{% include cards.html %}
 					</aside>
 				</div>
 			</div>

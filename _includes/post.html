@@ -1,28 +1,19 @@
-{% for language in site.data.i18n %}
-    {% if language[0] == page.lang %}
-        {% assign language = language[1] %}
-        {% break %}
-    {% endif %}
-{% endfor %}
+{%-assign t = site.data.locale[page.lang].translation-%}
+{%-assign posts = site.posts | where:"lang", page.lang-%}
 
-{% assign posts=site.posts | where:"lang", page.lang %}
+{%-for post in posts limit:5-%}
+<h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
 
-{% assign t_posted_on = language.translation.posted_on %}
-{% assign t_comments = language.translation.comments %}
-{% assign t_news_archive = language.translation.news_archive %}
-
-{% for post in posts limit:5 %}
-<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-
-<p>{{ t_posted_on }}<time datetime="{{ post.date | datetime | date_to_xmlschema }}"{% if updated %} data-updated="true"{% endif %}>{{ post.date | date: page.date_fmt }}</time></p>
+<p>{{ t.posted_on }}<time datetime="{{ post.date | datetime | date_to_xmlschema }}"{%-if updated-%}
+				data-updated="true"{%-endif-%}>{{ post.date | date: page.date_fmt }}</time></p>
 
 {{ post.content }}
 
-	{% if post.comments and site.disqus_shortname %}
-<p><a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.id | escape }}">{{ t_comments }}</a></p>
-	{% endif %}
-{% endfor %}
+	{%-if post.comments and site.disqus_shortname-%}
+<p><a href="{{ post.url | relative_url }}#disqus_thread" data-disqus-identifier="{{ post.id | escape }}">{{ t.comments }}</a></p>
+	{%-endif-%}
+{%-endfor-%}
 
 <p class="text-center" style="margin-top: 2em;">
-	<a class="btn btn-lg btn-default" href="/{{ page.lang }}/news/archive/"><i class="fa fa-calendar fa-fw"></i>{{ t_news_archive }}</a>
+	<a class="btn btn-lg btn-default" href="{{ '/' | append: page.lang | append: '/' | append: "news/archive/" | relative_url }}"><i class="fa fa-calendar fa-fw"></i>{{ t.news_archive }}</a>
 </p>

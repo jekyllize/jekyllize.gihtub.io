@@ -39,3 +39,4 @@ or manually:
     $ bundle exec jekyll serve --watch --host 0.0.0.0
 
 The local website should be available at <http://localhost:4000/>
+

@@ -1,4 +1,4 @@
-# Source code for the [Jekyllize](https://jekyllize.github.io) website template
+# Source code for the [Jekyllize] website template
 
 [![Travis Build Status](https://travis-ci.com/jekyllize/jekyllize.github.io.svg?branch=source)](https://travis-ci.com/jekyllize/jekyllize.github.io)
 
@@ -20,6 +20,7 @@ Icons are provided by [Font Awesome][], favicons by [Favicon Generator][].
 [Favicon Generator]: https://realfavicongenerator.net/
 [Font Awesome]: http://fontawesome.io/
 [Jekyll]: http://jekyllrb.com/
+[Jekyllize]: https://jekyllize.github.io/
 [Markdown]: https://daringfireball.net/projects/markdown/
 [Node.js]: http://nodejs.org/
 [SASS]: https://sass-lang.com/
@@ -35,6 +36,6 @@ or manually:
     $ gem install bundler
     $ yarn --no-bin-links
     $ yarn dist
-    $ bundle exec jekyll serve -w
+    $ bundle exec jekyll serve --watch --host 0.0.0.0
 
 The local website should be available at <http://localhost:4000/>

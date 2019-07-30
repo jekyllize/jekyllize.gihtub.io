@@ -1,5 +1,11 @@
 # TODO
 
+- Handle different versions:
+  - GitHub Pages with no custom plugins, on master repo
+  - Using Travis with custom plugins, on source repo
+
+- Handle a template upstream repo to manage better derived ones
+
 ## Search
 
 - Not enough content in memory for a proper search

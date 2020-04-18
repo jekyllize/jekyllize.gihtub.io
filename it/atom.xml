@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Notizie</title>
+	<link href="https://jekyllize.github.io/it/atom.xml" rel="self"/>
+	<link href="https://jekyllize.github.io/it/"/>
+	<updated>2020-04-18T09:38:28+00:00</updated>
+	<id>https://jekyllize.github.io</id>
+	<entry>
+		<title>Nuovo Sito Avviato</title>
+		<link href="https://jekyllize.github.io/it/news/2017/10/22/nuovo-sito-avviato.html"/>
+		<updated>2017-10-22T00:00:00+00:00</updated>
+		<id>/it/news/2017/10/22/nuovo-sito-avviato</id>
+		<content type="html">&lt;p&gt;Siamo orgogliosi di annunciare il nuovo sito web!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Creato con &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;La maggior parte dei contenuti è scritta in &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Utilizzo di &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt; per una semplice personalizzazione grafica
+e design responsive, rendendo il sito accessibile da qualsiasi dispositivo.&lt;/li&gt;
+  &lt;li&gt;Utilizzo di &lt;a href=&quot;http://fontawesome.io/&quot;&gt;FontAwesome&lt;/a&gt; e &lt;a href=&quot;https://realfavicongenerator.net/&quot;&gt;Favicon Generator&lt;/a&gt; per le icone dei contenuti
+e del sito.&lt;/li&gt;
+  &lt;li&gt;Possibilità di scrivere dei commenti nelle notizie tramite &lt;a href=&quot;https://disqus.com&quot;&gt;Disqus&lt;/a&gt;:
+facci sapere cosa ne pensi!&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+	</entry>
+
+</feed>
+
